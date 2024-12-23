@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-title: 2.25rem;
+  --font-color: #131313;
+  --m-sides: 6rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: Switzer, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Segoe UI Emoji", "Apple Color Emoji", "Segoe UI Symbol";
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+body {
+  color: var(--font-color);
+}
+
+.nav-title-link {
+  font-size: var(--font-title);
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--font-color);
+  transition: 0.3s ease;
+}
+
+.hover-effect:before {
+  content: "";
+  position: absolute;
+  bottom: -2%;
+  background-color: black;
+  height: 1px;
+  width: 0;
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+
+.hover-effect:hover:before {
+  width: 100%;
+}
+
+.scroll-header-nav {
+  height: 80px;
+  transition: 0.3s ease;
+}
+
+.scroll-header-title {
+  font-size: 1.45rem;
+  transition: 0.3s ease;
+}
+
+.show-navigation {
+  top: 0%;
+  transition: 0.5s ease;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 50px;
+  border: 2px solid var(--font-color);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--font-color);
+  color: white;
+  transition: 0.3s;
+}
+
+.hover-project {
+  right: 7%;
+  transition: 0.3s ease;
+}
+
+/* Infinite Marquee Tool Css Classes */
+
+.stripe {
+  width: 100%;
+  height: 55px;
+  position: relative;
+  background-color: var(--font-color);
+}
+
+.cnt2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: white;
+  border-top: 1px solid #1f1f1f;
+  border-bottom: 1px solid #1f1f1f;
+  transition: 0.3s ease;
+}
+
+.elem {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.25rem;
+  padding: 0px 0.5rem;
+  width: fit-content;
+  flex-shrink: 0;
+}
+
+.elem2 {
+  color: var(--font-color);
+}
+
+.dot {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.cnt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  opacity: 1;
+  transition: 0.3s ease;
+  transition-delay: 0.1s;
+}
+
+/* Hover marquee */
+
+.hover-marquee-cnt2 {
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.hover-marquee-cnt {
+  opacity: 0;
+  transition: 0.3s ease;
+  transition-delay: 0.1s;
+}
+
+.whatsapp-link {
+  color: #075e54;
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-title-link {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .stripe {
+    height: 40px;
+  }
+
+  .elem {
+    font-size: 0.75rem;
+    padding: 0 0.25rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .whatsapp-link {
+    text-align: end;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .whatsapp-link {
+    position: absolute;
+    top: 54%;
+    right: 5%;
+    z-index: 9;
+  }
+
+  .form {
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
+    margin-top: 4rem;
+  }
+}
