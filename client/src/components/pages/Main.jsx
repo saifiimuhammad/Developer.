@@ -5,9 +5,11 @@ import Projects from "../specific/Projects";
 import About from "../specific/About";
 import Contact from "../specific/Contact";
 
+import AppLayout from "../layout/AppLayout";
+
 const Main = () => {
   return (
-    <>
+    <AppLayout>
       <Breaker />
       <Home />
       <Breaker />
@@ -19,7 +21,7 @@ const Main = () => {
       <Breaker space={"10rem"} />
       <Contact />
       <Breaker space={"10rem"} />
-    </>
+    </AppLayout>
   );
 };
 

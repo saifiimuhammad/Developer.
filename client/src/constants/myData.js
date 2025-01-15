@@ -5,8 +5,33 @@ const projects = [
     link: "https://github.com/saifiimuhammad/TimesOfNews",
   },
   {
+    title: "iNotebook Web Application",
+    tools: "MERN Stack & BootStrap",
+    link: "https://github.com/saifiimuhammad/iNotebook",
+  },
+  {
+    title: "Ochi Design Clone",
+    tools: "Reactjs, Tailwindcss, GSAP & Locomotive",
+    link: "https://github.com/saifiimuhammad/Ochi-Design",
+  },
+  {
     title: "Times of News - React Web App",
-    tools: "React, Bootstrap & NewsAPI",
+    tools: "Reactjs, Bootstrap & NewsAPI",
+    link: "https://github.com/saifiimuhammad/TimesOfNews",
+  },
+  {
+    title: "Todo App - Typescript",
+    tools: "Reactjs & Typescript",
+    link: "https://github.com/saifiimuhammad/TimesOfNews",
+  },
+  {
+    title: "Headphones Landing Page",
+    tools: "HTML, CSS, JavaScript & Scrollreveal.js",
+    link: "https://github.com/saifiimuhammad/TimesOfNews",
+  },
+  {
+    title: "Fastfood Landing Page",
+    tools: "HTML, CSS, JavaScript & Scrollreveal.js",
     link: "https://github.com/saifiimuhammad/TimesOfNews",
   },
 ];
