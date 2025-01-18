@@ -1,4 +1,6 @@
 import Sidebar from "../specific/Sidebar";
+import ProjectDialog from "../dialogs/ProjectDialog";
+import { useState } from "react";
 
 const sidebarLinks = [
   {
@@ -20,12 +22,16 @@ const sidebarLinks = [
 ];
 
 const AdminLayout = ({ children }) => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="w-full h-screen flex items-center justify-between">
-      <Sidebar title={"Admin Panel"} sidebarLinks={sidebarLinks} />
+    <>
+      <ProjectDialog open={isOpen} />
+      <div className="w-full h-screen flex items-center justify-between">
+        <Sidebar title={"Admin Panel"} sidebarLinks={sidebarLinks} />
 
-      <section className="section w-[75%] h-screen">{children}</section>
-    </div>
+        <section className="section w-[75%] h-screen">{children}</section>
+      </div>
+    </>
   );
 };
 

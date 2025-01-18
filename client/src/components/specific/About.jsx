@@ -25,7 +25,10 @@ const About = () => {
               to your needs. Let&apos;s turn your ideas into impactful digital
               experiences!
             </p>
-            <div className="skills-container my-8 w-full flex items-center justify-around">
+            <div className="skills-container my-8 w-full flex items-center justify-around flex-col">
+              <h6 className="font-bold underline font-['Tiny5']">
+                hover on icons
+              </h6>
               <ul className="skill-list flex items-center justify-center gap-x-4">
                 {mySkills.map((value, key) => {
                   const { title, icon } = value;
@@ -42,6 +45,7 @@ const About = () => {
               <span
                 className={`v-line bg-[${fontColor}] h-[2rem] w-[1.5px] mx-7`}
               ></span>
+
               <ul className="social-list flex items-center justify-center list-none gap-x-7">
                 {mySocials.map((value, key) => {
                   const { link, icon } = value;

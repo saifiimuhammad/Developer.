@@ -2,7 +2,7 @@ const projects = [
   {
     title: "KarloBaat - Chat Application",
     tools: "MERN Stack, Socket.io & Tailwindcss",
-    link: "https://github.com/saifiimuhammad/TimesOfNews",
+    link: "https://github.com/saifiimuhammad/KarloBaat-chatapp",
   },
   {
     title: "iNotebook Web Application",
@@ -22,32 +22,48 @@ const projects = [
   {
     title: "Todo App - Typescript",
     tools: "Reactjs & Typescript",
-    link: "https://github.com/saifiimuhammad/TimesOfNews",
+    link: "https://github.com/saifiimuhammad/Todo-List-App---Typescript-version",
   },
   {
     title: "Headphones Landing Page",
     tools: "HTML, CSS, JavaScript & Scrollreveal.js",
-    link: "https://github.com/saifiimuhammad/TimesOfNews",
+    link: "https://github.com/saifiimuhammad/Headphones-Landing-page",
   },
   {
     title: "Fastfood Landing Page",
     tools: "HTML, CSS, JavaScript & Scrollreveal.js",
-    link: "https://github.com/saifiimuhammad/TimesOfNews",
+    link: "https://github.com/saifiimuhammad/FastFood-LandingPage",
   },
 ];
 
 const mySkills = [
   {
-    title: "Hyper Text Markup Language",
-    icon: "ri-html5-fill",
+    title: "Reactjs",
+    icon: "ri-reactjs-line",
   },
   {
-    title: "Cascading Styles Sheet",
-    icon: "ri-css3-fill",
+    title: "Nodejs",
+    icon: "ri-nodejs-line",
   },
   {
-    title: "JavaScript ES6",
-    icon: "ri-javascript-fill",
+    title: "Mongodb",
+    icon: "ri-database-line",
+  },
+  {
+    title: "npm",
+    icon: "ri-npmjs-line",
+  },
+  {
+    title: "Javascript",
+    icon: "ri-javascript-line",
+  },
+  {
+    title: "Github",
+    icon: "ri-github-fill",
+  },
+  {
+    title: "Data Structures & Algorithms",
+    icon: "ri-bubble-chart-fill",
   },
 ];
 

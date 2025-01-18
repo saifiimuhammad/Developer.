@@ -31,6 +31,7 @@ const ProjectItem = ({ title, tools, link }) => {
           {tools}
         </span>
       </div>
+      <i className="ri-arrow-drop-right-line hidden sm:inline-block absolute top-[4%] right-[4%] z-50 text-[6rem] transition-all duration-300 ease-linear"></i>
     </Link>
 
     // Have to put an arrow icon
